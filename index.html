@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Bhaskara</h1>
+      </header>
+
+      <main>
+        <section class="description">
+          <p>
+            \[
+            x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+            \]
+          </p>
+
+        </section>
+        <section class="input">
+          <label for="a">a</label>
+          <input value="1" type="number" id="a" placeholder="Insira o valor de 'a'">
+          <label for="b">b</label>
+          <input value="5" type="number" id="b" placeholder="Insira o valor de 'b'">
+          <label for="c">c</label>
+          <input value="1" type="number" id="c" placeholder="Insira o valor de 'c'">
+          <button id="calculate">Calcular</button>
+        </section>
+
+        <section class="output">
+          <h2>Resultado:</h2>
+          <p id="result">Não calculado</p>
+        </section>
+      </main>
+    </div>
+
+      <script type="module" src="./index.js"></script>
+      <script type="module" src="./mathjax.js"></script>
+  </body>
+</html>
